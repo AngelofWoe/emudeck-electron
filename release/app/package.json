@@ -4,9 +4,9 @@
   "description": "Play all your RetroGames",
   "license": "MIT",
   "author": {
-    "name": "EmuDeck",
+    "name": "AngelofWoe",
     "email": "-",
-    "url": "https://github.com/EmuDeck"
+    "url": "https://github.com/AngelofWoe"
   },
   "main": "./dist/main/main.js",
   "scripts": {
