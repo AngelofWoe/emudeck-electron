@@ -1,4 +1,4 @@
-name: Publish Beta
+name: Publish Test
 
 on:
   push:
@@ -33,10 +33,10 @@ jobs:
       - name: Install dependencies
         run: |
           npm install
-      - name: Set Beta Build
+      - name: Set Test Build
         run: |
-          cp ./src/data/branch-beta.json ./src/data/branch.json
-          sed -i "s|emudeck-electron|emudeck-electron-beta|g" "./package.json"
+          cp ./src/data/branch-test.json ./src/data/branch.json
+          sed -i "s|emudeck-electron|emudeck-electron-test|g" "./package.json"
       - name: Publish releases
         env:
           # These values are used for auto updates signing
